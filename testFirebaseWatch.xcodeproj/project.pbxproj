@@ -11,7 +11,38 @@
 		EE8ED8B92CCF560300E8CA08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8ED8B82CCF560300E8CA08 /* ContentView.swift */; };
 		EE8ED8BB2CCF560500E8CA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8ED8BA2CCF560500E8CA08 /* Assets.xcassets */; };
 		EE8ED8BE2CCF560500E8CA08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8ED8BD2CCF560500E8CA08 /* Preview Assets.xcassets */; };
+		EE8ED8CB2CCF562100E8CA08 /* watchFireabseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8ED8CA2CCF562100E8CA08 /* watchFireabseApp.swift */; };
+		EE8ED8CD2CCF562100E8CA08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8ED8CC2CCF562100E8CA08 /* ContentView.swift */; };
+		EE8ED8CF2CCF562900E8CA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8ED8CE2CCF562900E8CA08 /* Assets.xcassets */; };
+		EE8ED8D22CCF562900E8CA08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8ED8D12CCF562900E8CA08 /* Preview Assets.xcassets */; };
+		EE8ED8D52CCF562900E8CA08 /* watchFireabse Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EE8ED8C82CCF562100E8CA08 /* watchFireabse Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE8ED8E22CCF587F00E8CA08 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EE8ED8E12CCF587F00E8CA08 /* FirebaseAuth */; };
+		EE8ED8E42CCF587F00E8CA08 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = EE8ED8E32CCF587F00E8CA08 /* FirebaseAuthCombine-Community */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE8ED8D32CCF562900E8CA08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE8ED8AB2CCF560300E8CA08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE8ED8C72CCF562100E8CA08;
+			remoteInfo = "watchFireabse Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE8ED8D92CCF562900E8CA08 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EE8ED8D52CCF562900E8CA08 /* watchFireabse Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EE8ED8B32CCF560300E8CA08 /* testFirebaseWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFirebaseWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +50,11 @@
 		EE8ED8B82CCF560300E8CA08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE8ED8BA2CCF560500E8CA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8ED8BD2CCF560500E8CA08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE8ED8C82CCF562100E8CA08 /* watchFireabse Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchFireabse Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8ED8CA2CCF562100E8CA08 /* watchFireabseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchFireabseApp.swift; sourceTree = "<group>"; };
+		EE8ED8CC2CCF562100E8CA08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE8ED8CE2CCF562900E8CA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE8ED8D12CCF562900E8CA08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +65,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE8ED8C52CCF562100E8CA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8ED8E22CCF587F00E8CA08 /* FirebaseAuth in Frameworks */,
+				EE8ED8E42CCF587F00E8CA08 /* FirebaseAuthCombine-Community in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				EE8ED8B52CCF560300E8CA08 /* testFirebaseWatch */,
+				EE8ED8C92CCF562100E8CA08 /* watchFireabse Watch App */,
 				EE8ED8B42CCF560300E8CA08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EE8ED8B32CCF560300E8CA08 /* testFirebaseWatch.app */,
+				EE8ED8C82CCF562100E8CA08 /* watchFireabse Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EE8ED8C92CCF562100E8CA08 /* watchFireabse Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				EE8ED8CA2CCF562100E8CA08 /* watchFireabseApp.swift */,
+				EE8ED8CC2CCF562100E8CA08 /* ContentView.swift */,
+				EE8ED8CE2CCF562900E8CA08 /* Assets.xcassets */,
+				EE8ED8D02CCF562900E8CA08 /* Preview Content */,
+			);
+			path = "watchFireabse Watch App";
+			sourceTree = "<group>";
+		};
+		EE8ED8D02CCF562900E8CA08 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE8ED8D12CCF562900E8CA08 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,14 +143,37 @@
 				EE8ED8AF2CCF560300E8CA08 /* Sources */,
 				EE8ED8B02CCF560300E8CA08 /* Frameworks */,
 				EE8ED8B12CCF560300E8CA08 /* Resources */,
+				EE8ED8D92CCF562900E8CA08 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE8ED8D42CCF562900E8CA08 /* PBXTargetDependency */,
+			);
+			name = testFirebaseWatch;
+			productName = testFirebaseWatch;
+			productReference = EE8ED8B32CCF560300E8CA08 /* testFirebaseWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE8ED8C72CCF562100E8CA08 /* watchFireabse Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8ED8D62CCF562900E8CA08 /* Build configuration list for PBXNativeTarget "watchFireabse Watch App" */;
+			buildPhases = (
+				EE8ED8C42CCF562100E8CA08 /* Sources */,
+				EE8ED8C52CCF562100E8CA08 /* Frameworks */,
+				EE8ED8C62CCF562100E8CA08 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = testFirebaseWatch;
-			productName = testFirebaseWatch;
-			productReference = EE8ED8B32CCF560300E8CA08 /* testFirebaseWatch.app */;
+			name = "watchFireabse Watch App";
+			packageProductDependencies = (
+				EE8ED8E12CCF587F00E8CA08 /* FirebaseAuth */,
+				EE8ED8E32CCF587F00E8CA08 /* FirebaseAuthCombine-Community */,
+			);
+			productName = "watchFireabse Watch App";
+			productReference = EE8ED8C82CCF562100E8CA08 /* watchFireabse Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +189,9 @@
 					EE8ED8B22CCF560300E8CA08 = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					EE8ED8C72CCF562100E8CA08 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = EE8ED8AE2CCF560300E8CA08 /* Build configuration list for PBXProject "testFirebaseWatch" */;
@@ -111,11 +203,15 @@
 				Base,
 			);
 			mainGroup = EE8ED8AA2CCF560300E8CA08;
+			packageReferences = (
+				EE8ED8E02CCF587F00E8CA08 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EE8ED8B42CCF560300E8CA08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EE8ED8B22CCF560300E8CA08 /* testFirebaseWatch */,
+				EE8ED8C72CCF562100E8CA08 /* watchFireabse Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +223,15 @@
 			files = (
 				EE8ED8BE2CCF560500E8CA08 /* Preview Assets.xcassets in Resources */,
 				EE8ED8BB2CCF560500E8CA08 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8ED8C62CCF562100E8CA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8ED8D22CCF562900E8CA08 /* Preview Assets.xcassets in Resources */,
+				EE8ED8CF2CCF562900E8CA08 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +247,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE8ED8C42CCF562100E8CA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8ED8CD2CCF562100E8CA08 /* ContentView.swift in Sources */,
+				EE8ED8CB2CCF562100E8CA08 /* watchFireabseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE8ED8D42CCF562900E8CA08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE8ED8C72CCF562100E8CA08 /* watchFireabse Watch App */;
+			targetProxy = EE8ED8D32CCF562900E8CA08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EE8ED8BF2CCF560500E8CA08 /* Debug */ = {
@@ -267,6 +389,7 @@
 		EE8ED8C22CCF560500E8CA08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +419,7 @@
 		EE8ED8C32CCF560500E8CA08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +446,66 @@
 			};
 			name = Release;
 		};
+		EE8ED8D72CCF562900E8CA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchFireabse Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchFireabse;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sglab.testFirebaseWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sglab.testFirebaseWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		EE8ED8D82CCF562900E8CA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchFireabse Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchFireabse;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sglab.testFirebaseWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sglab.testFirebaseWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,7 +527,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EE8ED8D62CCF562900E8CA08 /* Build configuration list for PBXNativeTarget "watchFireabse Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8ED8D72CCF562900E8CA08 /* Debug */,
+				EE8ED8D82CCF562900E8CA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE8ED8E02CCF587F00E8CA08 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE8ED8E12CCF587F00E8CA08 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE8ED8E02CCF587F00E8CA08 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EE8ED8E32CCF587F00E8CA08 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE8ED8E02CCF587F00E8CA08 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE8ED8AB2CCF560300E8CA08 /* Project object */;
 }
